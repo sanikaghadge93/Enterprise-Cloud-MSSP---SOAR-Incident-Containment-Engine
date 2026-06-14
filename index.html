@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SOAR Incident Containment Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>SOAR Incident Containment Engine</h1>
+</header>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h2>Total Alerts</h2>
+        <p id="totalAlerts">3</p>
+    </div>
+
+    <div class="card">
+        <h2>Threat Score</h2>
+        <p id="threatScore">92</p>
+    </div>
+
+    <div class="card">
+        <h2>Containment Status</h2>
+        <p class="safe">Completed</p>
+    </div>
+
+</div>
+
+<section class="alerts">
+
+    <h2>Incoming Alerts</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>IP Address</th>
+                <th>Threat Type</th>
+                <th>Risk Score</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="alertTable">
+        </tbody>
+    </table>
+
+</section>
+
+<section class="timeline">
+
+    <h2>Automated Playbook Actions</h2>
+
+    <ul id="logs">
+        <li>Alert Received</li>
+        <li>Threat Intelligence Checked</li>
+        <li>IP Blocked</li>
+        <li>Case Created</li>
+    </ul>
+
+</section>
+
+<section class="rbac">
+    <h2>User Role</h2>
+    <p>Senior Analyst</p>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
